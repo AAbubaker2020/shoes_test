@@ -56,7 +56,9 @@ export default function ProductGrid() {
               onHoverStart={() => setHoveredProduct(product.id)}
               onHoverEnd={() => setHoveredProduct(null)}
             >
-              <Link href={`/products/${product.id}`}>
+              <Link href={`/#}`}>
+              {/*<Link href={`/products/${product.id}`}>*/}
+
                 <div className="relative h-64">
                   <Image
                     src={product.image}
