@@ -31,7 +31,7 @@ export default function ContactPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-gold">Get in Touch</h2>
           <p className="mb-4">
-            We'd love to hear from you. Whether you have a question about our products, need assistance with an order, or simply want to share your thoughts, our team is here to help.
+            We&apos;d love to hear from you. Whether you have a question about our products, need assistance with an order, or simply want to share your thoughts, our team is here to help.
           </p>
           <h3 className="text-xl font-semibold mb-2 text-gold">Visit Our Flagship Store</h3>
           <p className="mb-4">

@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-gold">Luxe Elegance</h3>
-            <p className="text-sm text-gray-300">Unparalleled luxury in women's and men's shoes and bags.</p>
+            <p className="text-sm text-gray-300">Unparalleled luxury in women&apos;s and men&apos;s shoes and bags.</p>
           </div>
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-gold">Quick Links</h4>
