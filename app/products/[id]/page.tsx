@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import ProductCounter from '@/app/components/ProductCounter'
-import ProductGallery from '@/app/components/ProductGallery'
-import AddToCartButton from '@/app/components/AddToCartButton'
-import RotatingProduct from '@/app/components/RotatingProduct'
+import ProductCounter from '@/components/ProductCounter'
+import ProductGallery from '@/components/ProductGallery'
+import AddToCartButton from '@/components/AddToCartButton'
+import RotatingProduct from '@/components/RotatingProduct'
+import ZoomableImage from '@/components/ZoomableImage'
+import React from 'react'
 
 // This would typically come from a database or API
 const product = {
