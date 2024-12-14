@@ -13,9 +13,13 @@ export default function AddToCartButton({ productId }: AddToCartButtonProps) {
 
   const handleAddToCart = async () => {
     setIsAdding(true)
-    // Here you would typically make an API call to add the item to the cart
-    await new Promise(resolve => setTimeout(resolve, 1000)) // Simulating API call
-    setIsAdding(false)
+    try {
+      // Simulate API call using productId
+      console.log(`Adding product ${productId} to the cart`)
+      await new Promise(resolve => setTimeout(resolve, 1000))
+    } finally {
+      setIsAdding(false)
+    }
   }
 
   return (
@@ -29,4 +33,3 @@ export default function AddToCartButton({ productId }: AddToCartButtonProps) {
     </Button>
   )
 }
-

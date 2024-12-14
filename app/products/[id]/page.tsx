@@ -14,10 +14,10 @@ const product = {
   description: "Inspired by the night sky, these stilettos feature hand-placed Swarovski crystals, creating a dazzling constellation effect with every step. The sleek silhouette is crafted from the finest Italian leather, ensuring both comfort and elegance.",
   price: 2999.99,
   images: [
+    "/1.png",
     "/2.png",
-    "/2.png",
-    "/2.png",
-    "/2.png",
+    "/3.png",
+    "/4.png",
   ],
   video: "/videos/celestial-stiletto.mp4",
   inStock: 5,
@@ -36,6 +36,7 @@ export default function ProductPage() {
         <div>
           <ProductGallery images={product.images} video={product.video} onSelectImage={setSelectedImage} />
           <ZoomableImage src={selectedImage} alt={product.name} />
+          <Image src={product.images[0]} alt={product.name} width={400} height={400} />
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4 text-gold">3D View</h2>
             <RotatingProduct modelPath="/models/celestial-stiletto.glb" />
@@ -61,9 +62,9 @@ export default function ProductPage() {
           <h2 className="text-xl font-semibold mb-2 text-gold">Design Story</h2>
           <p className="mb-6">{product.designStory}</p>
           <AddToCartButton productId={product.id} />
+          <Button className="mt-4 bg-gold text-black">Back to Products</Button>
         </div>
       </div>
     </div>
   )
 }
-
