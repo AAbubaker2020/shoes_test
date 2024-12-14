@@ -7,7 +7,7 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-gold">Luxe Elegance</Link>
         <div className="flex items-center space-x-6">
-          <Link href="/products" className="text-white hover:text-gold transition-colors">Products</Link>
+          <Link href="/#" className="text-white hover:text-gold transition-colors">Products</Link>
           <Link href="/about" className="text-white hover:text-gold transition-colors">About</Link>
           <Link href="/contact" className="text-white hover:text-gold transition-colors">Contact</Link>
           <Link href="/cart" className="text-white hover:text-gold transition-colors">

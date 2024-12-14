@@ -18,7 +18,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-gold transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-gold transition-colors">About Us</Link></li>
-              <li><Link href="/products" className="hover:text-gold transition-colors">Products</Link></li>
+              <li><Link href="/#" className="hover:text-gold transition-colors">Products</Link></li>
               <li><Link href="/contact" className="hover:text-gold transition-colors">Contact Us</Link></li>
             </ul>
           </div>
@@ -26,8 +26,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-gold">Customer Service</h4>
             <ul className="space-y-2">
               <li><Link href="/faq" className="hover:text-gold transition-colors">FAQs</Link></li>
-              <li><Link href="/shipping" className="hover:text-gold transition-colors">Shipping Policy</Link></li>
-              <li><Link href="/returns" className="hover:text-gold transition-colors">Return Policy</Link></li>
+              <li><Link href="/#" className="hover:text-gold transition-colors">Shipping Policy</Link></li>
+              <li><Link href="/#" className="hover:text-gold transition-colors">Return Policy</Link></li>
             </ul>
           </div>
           <div className="space-y-4">

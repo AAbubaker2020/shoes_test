@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <Image
-            src="/images/atelier.jpg"
+            src="/2.png"
             alt="Our atelier"
             width={600}
             height={400}
