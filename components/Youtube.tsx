@@ -1,6 +1,6 @@
-import { LightbulbIcon as LucideProps } from 'lucide-react'
+import { LightbulbIcon } from 'lucide-react';
 
-export default function Youtube(props: LucideProps) {
+export default function Youtube(props: React.ComponentProps<typeof LightbulbIcon>) {
   return (
     <svg
       {...props}
@@ -23,6 +23,5 @@ export default function Youtube(props: LucideProps) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
-
