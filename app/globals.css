@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #D4AF37;
+  --color-silver: #C0C0C0;
+  --color-red: #8B0000;
+  --color-blue: #000080;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-gold text-black hover:bg-opacity-90 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--color-gold);
+  }
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+  .text-silver {
+    color: var(--color-silver);
+  }
+  .bg-silver {
+    background-color: var(--color-silver);
+  }
+  .text-luxury-red {
+    color: var(--color-red);
+  }
+  .bg-luxury-red {
+    background-color: var(--color-red);
+  }
+  .text-luxury-blue {
+    color: var(--color-blue);
+  }
+  .bg-luxury-blue {
+    background-color: var(--color-blue);
+  }
+}
+
+/* Luxury Enhancements */
+.hover-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.hover-shine:hover::before {
+  left: 125%;
+}
+
+.text-shadow-gold {
+  text-shadow: 0 0 10px var(--color-gold);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
+
+/* Cinematic Sound Effect */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.cinematic-sound {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeInOut 2s infinite;
+}
+
